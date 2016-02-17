@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timestamp microservice</title>
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+  <script src="/public/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class = "container">
+    <h1>API Timestamp Microservice</h1>
+    <p>Full stack Javascript app built with node.js, express.js, and Bootstrap by <a href="https://github.com/eeseesee">ECC</a></p>
+    <blockquote>
+                User stories:
+                <ul>1) I can pass a string as a parameter, and it will check to see whether that string
+                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a natural language date or Unix timestamp, it returns null for those properties.</ul>
+            </blockquote>
+    <h3>Example usage:</h3>
+            <code>https://APPNAME.herokuapp.com/February%2015,%202016</code><br>
+            <code>https://APPNAME.herokuapp.com/1455494400</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": 1455494400,
+                  "natural": "February 15, 2016"
+                }
+            </code>
+
+  </div>
+</body>
+
+</html>
